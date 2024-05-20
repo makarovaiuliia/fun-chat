@@ -18,7 +18,7 @@ const chatView = new Chat(chat, events);
 const profileView = new Profile(header, events);
 
 const chatApi = new ChatWebSocketAPI(
-	'wss:https://fun-chat-server-yzi3.onrender.com',
+	'wss://fun-chat-server-61fe3bb7d8c1.herokuapp.com/',
 	events
 );
 
