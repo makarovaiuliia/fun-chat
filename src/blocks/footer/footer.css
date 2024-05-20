@@ -1,0 +1,9 @@
+.footer {
+	display: flex;
+	grid-area: footer;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 20px;
+	background-color: var(--main-bg-color);
+	border-radius: 20px;
+}

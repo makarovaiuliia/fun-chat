@@ -1,0 +1,33 @@
+.user-list {
+	display: grid;
+	grid-template-rows: 40px 1fr;
+	grid-template-columns: 1fr;
+	gap: 3px;
+	padding: 15px 10px;
+	overflow-y: scroll;
+}
+
+/* .user-list_search::before {
+	content: url('../../images/loupe.svg');
+	inline-size: 20px;
+	block-size: 20px;
+} */
+
+.user-list_search_input {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 5px;
+	height: 100%;
+	inline-size: 100%;
+	padding: 10px;
+	font-size: 12px;
+	background-color: var(--accent-bg);
+	border: none;
+	border-radius: 10px;
+}
+
+.user-list_list {
+	max-block-size: 500px;
+	overflow-y: scroll;
+}

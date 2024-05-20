@@ -1,0 +1,20 @@
+@import url('./global.css');
+@import url('./root/root.css');
+@import url('./footer/footer.css');
+@import url('./header/header.css');
+@import url('./main/main.css');
+@import url('./chat/chat.css');
+@import url('./user-list/user-list.css');
+@import url('./button/button.css');
+@import url('./form/form.css');
+@import url('./message/message.css');
+@import url('./user/user.css');
+@import url('./modal/modal.css');
+@import url('./login/login.css');
+
+body {
+	color: var(--text-color);
+	font-weight: 300;
+	font-family: 'Inter', sans-serif;
+	background-color: var(--bg-color);
+}

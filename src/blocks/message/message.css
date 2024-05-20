@@ -1,0 +1,68 @@
+.message-container {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	min-inline-size: 250px;
+	max-inline-size: 300px;
+	padding: 10px;
+	font-size: 12px;
+	background-color: var(--secondary-bg);
+	border-radius: 10px;
+}
+
+.message-container[data-user='true'] {
+	align-self: end;
+	color: var(--main-bg-color);
+	background-color: var(--accent-color);
+}
+
+.message_header {
+	display: flex;
+	justify-content: space-between;
+	color: var(--secondary-color);
+}
+
+.message {
+	display: flex;
+	min-block-size: 30px;
+	font-size: 14px;
+	word-break: break-all;
+}
+
+.message_info {
+	display: flex;
+	justify-content: space-between;
+	color: var(--secondary-color);
+}
+
+.message_buttons {
+	display: flex;
+	align-self: end;
+	gap: 8px;
+}
+
+.message-edit {
+	inline-size: 10px;
+	block-size: 10px;
+	background-image: url('../../images/change.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	cursor: pointer;
+}
+
+.message-delete {
+	inline-size: 10px;
+	block-size: 10px;
+	background-image: url('../../images/cross.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	cursor: pointer;
+}
+
+@media (width <= 900px) {
+	.message-container {
+		inline-size: 100%;
+	}
+}

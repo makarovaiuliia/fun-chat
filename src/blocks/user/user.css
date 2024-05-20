@@ -1,0 +1,67 @@
+.user {
+	display: grid;
+	grid-template-columns: 60px 1fr;
+	gap: 10px;
+	inline-size: 100%;
+	block-size: 70px;
+	padding: 5px;
+	font-size: 12px;
+	background-color: var(--main-bg-color);
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.user[data-active='true'] {
+	background-color: var(--secondary-bg);
+}
+
+.user_photo {
+	inline-size: 60px;
+	background-image: url('../../images/userPlaceholder.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.user_info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 5px;
+	font-size: 10px;
+}
+
+.user_name {
+	position: relative;
+	overflow-x: hidden;
+	font-weight: 500;
+	font-size: 14px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.user_message {
+	display: inline-block;
+	max-width: 150px;
+	overflow-x: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.user[data-last-message='you'] .user_message::before {
+	color: var(--accent-color);
+	font-weight: 600;
+	content: 'You: ';
+}
+
+@media (width <= 900px) {
+	.user_photo {
+		display: none;
+	}
+
+	.user {
+		display: flex;
+		block-size: 50px;
+	}
+}

@@ -1,0 +1,38 @@
+:root {
+	--bg-color: #202022;
+	--main-bg-color: #f9fafc;
+	--accent-color: #7678ed;
+	--secondary-bg: #eeeef8;
+	--accent-bg: #dbdcff;
+	--secondary-color: #d1d3d5;
+	--text-color: #2a2a2b;
+	--online: #70ac8e;
+	--error: #e03a36;
+}
+
+.root {
+	display: grid;
+	grid-template-columns: 1fr 25%;
+	grid-template-areas: 'main header' 'footer footer';
+	gap: 10px;
+	padding: 100px;
+}
+
+@media (width <= 900px) {
+	.root {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+section,
+header,
+footer {
+	min-height: 50px;
+}
+
+@media (width <= 1000px) {
+	.root {
+		padding: 20px;
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"include": ["src/index.ts", "src/custom.d.ts"],
+	"compilerOptions": {
+		"outDir": "dist",
+		"esModuleInterop": true,
+		"target": "ES6",
+		"strict": true,
+		"declaration": true,
+		"allowSyntheticDefaultImports": true,
+		"noImplicitAny": true,
+		"module": "ESNext",
+		"allowJs": true,
+		"moduleResolution": "Bundler"
+	}
+}
